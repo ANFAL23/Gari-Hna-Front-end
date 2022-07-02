@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/fragment_ListPark">
+
+    <fragment
+        android:id="@+id/fragment_ListPark"
+        android:name="com.example.authentification_cloud.FragmentListPark"
+        android:label="fragment__list_park"
+        tools:layout="@layout/fragment__list_park" />
+    <fragment
+        android:id="@+id/fragment_profil"
+        android:name="com.example.authentification_cloud.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/fragment_place"
+        android:name="com.example.authentification_cloud.PlaceFragment"
+        android:label="fragment_place"
+        tools:layout="@layout/fragment_place"/>
+    <fragment
+        android:id="@+id/fragment_Resever"
+        android:name="com.example.authentification_cloud.ReserverFragment"
+        android:label="fragment_Reserver"
+        tools:layout="@layout/fragment_reserver" />
+    <action
+        android:id="@+id/action_fragment_details_to_fragment_reserver"
+        app:destination="@id/fragment_Resever" />
+    <fragment
+        android:id="@+id/fragment_maps"
+        android:name="com.example.authentification_cloud.MapsFragment2"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps2" />
+    <activity
+        android:id="@+id/recherche_activity"
+        android:name="com.example.authentification_cloud.RechercheActivity"
+        android:label="recherche"
+        tools:layout="@layout/recherche_parkings" />
+    <action
+        android:id="@+id/action_fragment_login_to_fragment_listpark"
+        app:destination="@id/fragment_ListPark" />
+    <fragment
+        android:id="@+id/fragment_ListReservation"
+        android:name="com.example.authentification_cloud.FragmentListReservation"
+        android:label="fragment__list_reservation"
+        tools:layout="@layout/fragment__list_reservation" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_ListReservation"
+            app:destination="@id/fragment_ListReservation" />
+        <action
+            android:id="@+id/action_fragment_ListReservation_to_fragment_login"
+            app:destination="@id/fragment_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.authentification_cloud.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_ListReservation2"
+            app:destination="@id/fragment_ListReservation" />
+    </fragment>
+    <action
+        android:id="@+id/action_to_fragment_login"
+        app:destination="@+id/fragment_login" />
+    <action
+        android:id="@+id/action_fragment_login_to_fragment_register"
+        app:destination="@id/fragment_register" />
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="com.example.authentification_cloud.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="com.example.authentification_cloud.FragmentDetailsParking"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details_parking" />
+    <fragment
+        android:id="@+id/fragment_details_reservation"
+        android:name="com.example.authentification_cloud.Details_ReservationFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details__reservation" />
+
+    <action
+        android:id="@+id/action_fragment_listpark_to_fragment_details"
+        app:destination="@id/fragment_details" />
+    <action
+        android:id="@+id/action_fragment_register_to_fragment_login"
+        app:destination="@id/fragment_register" />
+    <action
+        android:id="@+id/action_fragment_ListReservation_to_fragment_details_reservation"
+        app:destination="@id/fragment_details_reservation" />
+</navigation>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="777dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="GariHna"
+                android:textColor="#3E01C8"
+                android:textSize="96px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="103dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/logginnorm"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Sing Up"
+                android:textColor="#3E01C8"
+                android:textSize="60px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_view_for_menu_chosen"
+                android:drawableStart="@drawable/ic_icon_person_filled"
+                android:drawablePadding="4dp"
+                android:hint="name"
+                android:inputType="text"
+                android:maxLength="20"
+                android:padding="10dp"
+                android:textSize="18sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/rounded_view_for_menu_chosen"
+                android:drawableStart="@drawable/ic_icon_email"
+                android:drawablePadding="4dp"
+                android:hint="email_address"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:padding="10dp"
+                android:textSize="18sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/MobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_view_for_menu_chosen"
+
+                android:drawableStart="@drawable/ic_icon_mobile"
+                android:drawablePadding="4dp"
+                android:hint="mobile_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textSize="18sp"
+                tools:ignore="Autofill" />
+
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_view_for_menu_chosen"
+                android:drawableStart="@drawable/ic_icon_password"
+                android:drawablePadding="4dp"
+                android:hint="password"
+                android:inputType="numberPassword"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="18sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/ConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_view_for_menu_chosen"
+
+                android:drawableStart="@drawable/ic_icon_password"
+                android:drawablePadding="4dp"
+                android:hint="confirm_password"
+                android:inputType="numberPassword"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_view_for_menu_red"
+                android:text="register"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/singup"
+                android:layout_width="253dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="you have acount,sing in!"
+                android:textColor="#3E01C8"
+                android:textSize="36px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

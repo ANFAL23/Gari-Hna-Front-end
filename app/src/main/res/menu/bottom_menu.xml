@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_ListPark"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_home"
+        android:title="Parkings"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/fragment_maps"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_location"
+        android:title="map"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/recherche_activity"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="recherche"
+        android:visible="true" />
+
+    <item
+
+        android:id="@+id/fragment_ListReservation"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon_person"
+        android:title="profil"
+        android:visible="true" />
+
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<LinearLayout
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:background="@android:color/white">
+    <fragment
+        android:id="@+id/autocomplete_fragment1"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textdistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Distance Maximal"
+        android:layout_below="@id/ll1"
+        android:textColor="#3E01C8"
+        android:textSize="36px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textdistance"
+        android:layout_marginTop="-29dp"
+        android:ems="10"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/textprix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textdistance"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Prix Maximal"
+        android:textColor="#3E01C8"
+        android:textSize="36px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textprix"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/rechercher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_view_for_menu_red"
+        android:text="rechercher"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        tools:ignore="UnusedAttribute" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">fb lite</string>
+    <string name="titleConnection">فايسبوك</string>
+    <string name="EmailAdress">رقم الهاتف المحمول أو البريد الالكتروني</string>
+    <string name="mdp">كلمة السر</string>
+    <string name="cnx">تسجيل الدخول</string>
+    <string name="mdpForgeten">هل نسيت كلمة السر</string>
+    <string name="noCpt"> إنشاء حساب جديد </string>
+    <string name="Newcpt">إنشاء حساب جديد</string>
+    <string name="aide">المساعدة</string>
+    <string name="quitter">خروج</string>
+</resources>

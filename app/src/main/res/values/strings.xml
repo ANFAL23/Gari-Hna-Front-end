@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Authentification_cloud</string>
+    <string name="titleConnection">Se connecter</string>
+    <string name="EmailAdress">Adresse émail</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="cnx">Connexion</string>
+    <string name="mdpForgeten">mot de passe oublié ?</string>
+    <string name="noCpt">Vous n`avez pas encore un compte ?</string>
+    <string name="Newcpt">Créer un compte</string>
+    <string name="aide">Aide</string>
+    <string name="quitter">Quitter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
